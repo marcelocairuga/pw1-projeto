@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu App</title>
+    <link rel="stylesheet" href="/app/assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Meu App</div>
+        <div class="user-info">
+            <span id="user-name">Maria Silva</span>            
+            <small id="user-email">maria.silva@example.com</small>            
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="/app" >Início</a></li>
+                    <li><a href="/app/products">Produtos</a></li>
+                    <li><a href="/app/auth/login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->  
+        <main>     
+            <section class="page-title">
+                <h2>Listagem de Produtos</h2>
+                <div class="actions">
+                    <button id="btn-add" class="btn-add">+ Novo Produto</button>
+                </div>                
+            </section>
+            <section class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Estoque</th>
+                            <th>Preço</th>
+                            <th>Ativo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">                        
+                    </tbody>
+                </table>
+            </section>       
+        </main>
+    </div>
+</body>
+<script type="module" src="/app/assets/js/products-list.js"></script>
+</html>
+
+

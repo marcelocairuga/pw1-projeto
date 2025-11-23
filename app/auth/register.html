@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu App</title>
+    <link rel="stylesheet" href="/app/assets/css/auth.css">
+</head>
+<body>
+    <form id="register-form">
+        <h2>Registre-se no Meu App</h2>
+        <div>
+            <input type="text" name="name" placeholder="Nome" required>
+            <p id="error-name" class="error"></p>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <p id="error-email" class="error"></p>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Senha" required>
+            <p id="error-password" class="error"></p>
+        </div>
+        <div>
+            <button id="submit-button" type="submit">Criar Conta</button>
+        </div>        
+    </form>
+    <p>Já tem uma conta? <a href="/app/auth/login.html">Entre</a></p>
+</body>
+<script src="/app/assets/js/auth-register.js"></script>
+</html>

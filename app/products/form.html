@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu App</title>
+    <link rel="stylesheet" href="/app/assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Meu App</div>
+        <div class="user-info">
+            <span id="user-name">Maria Silva</span>            
+            <small id="user-email">maria.silva@example.com</small>            
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="/app" >Início</a></li>
+                    <li><a href="/app/products">Produtos</a></li>
+                    <li><a href="/app/auth/login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->  
+        <main>     
+            <section class="page-title">
+                <h2 id="page-title">Adicionar Produto</h2>
+            </section>
+            <section class="form-container"></section>
+                <!-- Para testarmos a API, 
+                vamos deixar os campos do formulário como opcionais -->
+                <form id="product-form">
+                    <div class="form-field">
+                        <label for="name">Nome: </label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-field">
+                        <label for="stock">Estoque: </label>
+                        <input type="number" id="stock" name="stock">
+                    </div>
+                    <div class="form-field">
+                        <label for="price">Preço: </label>
+                        <input type="number" step="0.01" id="price" name="price">
+                    </div>
+                    <div class="form-field">
+                        <label for="active">Ativo: </label>
+                        <input type="checkbox" id="active" name="active">
+                    </div>                        
+                    <div class="form-buttons">
+                        <button type="button" id="cancel-button" class="btn-cancel">Cancelar</button>
+                        <button type="submit" id="submit-button" class="btn-save">Salvar</button>                            
+                    </div>       
+                </form>
+                <div id="form-errors" class="form-errors"></div>
+            </section>       
+        </main>
+    </div>
+</body>
+<script type="module" src="/app/assets/js/products-form.js"></script>
+</html>
+
+
